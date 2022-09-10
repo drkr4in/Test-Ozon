@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="block-1">
+        <div id="middle-circle"></div>
+        <div id="progress-spinner"></div>
+      </div>
+      <div class="block-2">
+        <div>
+          <input type="number" min="0" max="100" id="inpt" />
+          <span>Value</span>
+        </div>
+        <div>
+          <label class="toggle-control">
+            <span>Animate</span>
+            <input
+              type="checkbox"
+              checked="checked"
+              class="animate"
+              id="animate"
+            />
+            <span class="control"></span>
+          </label>
+        </div>
+        <div>
+          <label class="toggle-control">
+            <span>Hide</span>
+            <input type="checkbox" checked="checked" class="hide" />
+            <span class="control"></span>
+          </label>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

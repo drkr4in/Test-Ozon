@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  margin: auto;
+  margin-top: 100px;
+  width: 320px;
+  height: 568px;
+}
+.main .block-1 {
+  width: 320px;
+  height: 284px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main .block-1 #progress-spinner {
+  border-radius: 50%;
+  height: 170px;
+  width: 170px;
+}
+.main .block-1 #middle-circle {
+  position: absolute;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: large;
+  font-weight: bold;
+}
+.main .block-2 {
+  width: 320px;
+  height: 284px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+.main .block-2 #inpt {
+  width: 50px;
+  height: 30px;
+  border: 1px solid black;
+  border-radius: 25px;
+  text-align: center;
+}
+
+.toggle-control {
+  display: flex;
+  position: relative;
+  padding-left: 50px;
+  cursor: pointer;
+  font-size: 22px;
+  user-select: none;
+  justify-content: center;
+  align-items: center;
+}
+.toggle-control input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.toggle-control input:checked ~ .control {
+  background-color: darkgray;
+}
+.toggle-control input:checked ~ .control:after {
+  left: 26px;
+}
+.toggle-control .control {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 50px;
+  border-radius: 12.5px;
+  background-color: dodgerblue;
+  transition: background-color 0.15s ease-in;
+}
+.toggle-control .control:after {
+  content: "";
+  position: absolute;
+  left: 1px;
+  top: 1px;
+  width: 23px;
+  height: 23px;
+  border-radius: 12.5px;
+  background: white;
+  transition: left 0.15s ease-in;
+}
